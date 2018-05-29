@@ -1,4 +1,4 @@
-# Netlify Functions example
+# Netlify w/ CosmicJs Lambda Functions example and Launcher
 
 Hi there! This is my playground repo to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
 demo of the examples at https://cosmicjs-lambda-microservices.netlify.com.
@@ -22,7 +22,7 @@ To run the examples locally, here’s what you’ll need:
 `cd` into your local copy of the repository and run `yarn`
 
 ```
-cd netlify-functions-example
+cd cosmicjs-lambda-microservices
 yarn
 ```
 
