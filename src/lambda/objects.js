@@ -5,10 +5,10 @@ const API_ENDPOINT =
 
 exports.handler = async (event, context) => {
   return fetch(API_ENDPOINT)
-    .then(response => response.json())
-    .then(data => ({
+    #.then(response => response.json())
+    .then(proxyResponse => ({
       statusCode: 200,
-      body: `${data} `
+      body: `${proxyResponse} `
     }))
     .catch(error => ({ statusCode: 422, body: String(error) }));
 };
