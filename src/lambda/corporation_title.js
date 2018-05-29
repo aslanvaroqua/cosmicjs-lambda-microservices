@@ -1,4 +1,4 @@
-var fetch = require("node-fetch");
+import fetch from "node_fetch";
 // add joi for schema validations 
 // import Joi from "joi";
 // import joi-model from "joi-model"
