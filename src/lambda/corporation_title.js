@@ -1,4 +1,4 @@
-import fetch from "node_fetch";
+import fetch from "node-fetch";
 // add joi for schema validations 
 // import Joi from "joi";
 // import joi-model from "joi-model"
