@@ -12,6 +12,9 @@ const getTitle = ((corp) => {
     // new Corporation(response.json().object)
     return {
          statusCode: 200,
+          headers: {
+            "Access-Control-Allow-Origin" : "*" // Required for CORS support to work
+          },
          body: String(corp.object.title)
      };
 });
@@ -24,27 +27,3 @@ exports.handler = async (event, context) => {
      .then(getTitle)
      .catch(error => ({ statusCode: 422, body: String(error) }));
 };
-
-
- /**
- * schema for corporation - not required but helps me to know what I have to work with
- * It will also be useful for posting data. TODO:move to a models area. 
- * @private
- * @return {object} cosmicApi
- */
-// const schema = Joi.object({
-//     "title": Joi.string().required(),
-//     "content": Joi.string().required(),
-//     "type_slug": Joi.string(),
-//     "metadata": {
-//       "mddoingbusinessas":Joi.string().required(),
-//       "mdaddressline1": Joi.string().required(),
-//       "mdcity": Joi.string().required(),
-//       "mdstate":Joi.string(),
-//       "mdcountry":Joi.string().required(),
-//       "mddescription":Joi.string().required(),
-//       "mdgithub": Joi.string(),
-//     }
-// });
-
-// const Corporation   = joiModel(schema);
