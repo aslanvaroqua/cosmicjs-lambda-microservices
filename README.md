@@ -1,6 +1,6 @@
-# Netlify w/ CosmicJs Lambda Functions example and Launcher
+# Netlify w/ CosmicJs Objects
 
-Hi there! This is my playground repo to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
+This is to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
 demo of the examples at https://cosmicjs-lambda-microservices.netlify.com.
 
 If you want your own copy to play around with, the quickest way to get it up
